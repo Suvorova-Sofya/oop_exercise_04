@@ -13,7 +13,7 @@ struct five_angles {
     void print() const ;
     double square() const ;
 
-private:
+
 point<T> one,two,three,four,five;
 
 };

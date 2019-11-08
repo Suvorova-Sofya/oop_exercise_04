@@ -12,13 +12,9 @@ struct eight_angles {
     point<T> center() const ;
     void print() const ;
     double square() const ;
-private:
+
     point<T> one,two,three,four,five,six,seven,eight;
 };
-
-#include <iostream>
-
-#include "eight_angles.h"
 
 template<class T>
 eight_angles<T>::eight_angles(std::istream &is){

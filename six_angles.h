@@ -13,13 +13,10 @@ struct six_angles {
     point<T> center() const ;
     void print() const ;
     double square() const ;
-private:
+
     point<T> one,two,three,four,five,six;
 };
 
-#include <iostream>
-
-#include "six_angles.h"
 
 template<class T>
 six_angles<T>::six_angles(std::istream &is){

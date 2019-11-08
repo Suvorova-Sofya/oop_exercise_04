@@ -16,11 +16,11 @@ int main() {
         five_angles<double> real_five_angles(std::cin);
         print(real_five_angles);
         std::tuple<point<double>, point<double>, point<double>, point<double>, point<double>>
-                fake_five_angles{{1,  2},
-                                 {2,  -1},
-                                 {-3, -3},
-                                 {-4, 0},
-                                 {-3, 2}};
+                fake_five_angles{real_five_angles.one,
+                                 real_five_angles.two,
+                                 real_five_angles.three,
+                                 real_five_angles.four,
+                                 real_five_angles.five};
         print(fake_five_angles);
         std::cout << std::endl;
         std::cout << center(real_five_angles) << "\n";
@@ -33,12 +33,12 @@ int main() {
             six_angles<double> real_six_angles(std::cin);
             print(real_six_angles);
             std::tuple<point<double>, point<double>, point<double>, point<double>, point<double>, point<double>>
-                    fake_six_angles{{1,  2},
-                                    {2,  -1},
-                                    {1,  -3},
-                                    {-3, -3},
-                                    {-4, 0},
-                                    {-3, 2}};
+                    fake_six_angles{real_six_angles.one,
+                                    real_six_angles.two,
+                                    real_six_angles.three,
+                                    real_six_angles.four,
+                                    real_six_angles.five,
+                                    real_six_angles.six};
             print(fake_six_angles);
             std::cout << std::endl;
             std::cout << center(real_six_angles) << "\n";
@@ -51,14 +51,14 @@ int main() {
                 eight_angles<double> real_eight_angles(std::cin);
                 print(real_eight_angles);
                 std::tuple<point<double>, point<double>, point<double>, point<double>, point<double>, point<double>, point<double>,
-                        point<double>> fake_eight_angles{{1,  2},
-                                                         {2,  -1},
-                                                         {1,  -3},
-                                                         {0,  -5},
-                                                         {-2, -5},
-                                                         {-3, -3},
-                                                         {-4, 0},
-                                                         {-3, 2}};
+                        point<double>> fake_eight_angles{real_eight_angles.one,
+                                                         real_eight_angles.two,
+                                                         real_eight_angles.three,
+                                                         real_eight_angles.four,
+                                                         real_eight_angles.five,
+                                                         real_eight_angles.six,
+                                                         real_eight_angles.seven,
+                                                         real_eight_angles.eight};
                 print(fake_eight_angles);
                 std::cout << std::endl;
                 std::cout << center(real_eight_angles) << "\n";
@@ -69,6 +69,5 @@ int main() {
             }
         }
     }
-
     return 0;
 }

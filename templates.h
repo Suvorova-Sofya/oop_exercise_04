@@ -110,7 +110,7 @@ point<double> recursive_center(const T& t) {
         return  single_center<ID>(t) + recursive_center<ID+1>(t);
     }else{
         point<double> p;
-        p.point_1(0,0);
+        p=p.point_1(0,0);
         return p;
     }
 }
